@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Tyuiu.KapisRM.Sprint5.Task1.V17.Lib;
 
 namespace Tyuiu.KapisRM.Sprint5.Task1.V17

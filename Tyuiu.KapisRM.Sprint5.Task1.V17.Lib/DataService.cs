@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.KapisRM.Sprint5.Task1.V17.Lib
