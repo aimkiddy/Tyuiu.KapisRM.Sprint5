@@ -6,7 +6,7 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9.Lib
 {
     public class DataService : ISprint5Task3V9
     {
-        public string SaveToFileTextData(int x)
+        public byte[] SaveToFileTextData(int x)
         {
             string path = Path.GetTempFileName();
 
@@ -18,7 +18,12 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9.Lib
                 writer.Write(y);
             }
 
-            return Convert.ToBase64String(File.ReadAllBytes(path));
+            return File.ReadAllBytes(path);
+        }
+
+        string ISprint5Task3V9.SaveToFileTextData(int x)
+        {
+            return Convert.ToBase64String(SaveToFileTextData(x));
         }
     }
 }

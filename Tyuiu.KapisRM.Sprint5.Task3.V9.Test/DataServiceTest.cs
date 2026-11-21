@@ -11,12 +11,12 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9.Test
         public void ValidSaveToFileTextData()
         {
             DataService ds = new DataService();
-            string res = ds.SaveToFileTextData(3);
+            byte[] res = ds.SaveToFileTextData(3);
 
-            string wait = Convert.ToBase64String(BitConverter.GetBytes(3.375));
-            Assert.AreEqual(wait, res);
+            byte[] wait = BitConverter.GetBytes(3.375);
+            CollectionAssert.AreEqual(wait, res);
 
-            double y = BitConverter.ToDouble(Convert.FromBase64String(res), 0);
+            double y = BitConverter.ToDouble(res, 0);
             Assert.AreEqual(3.375, y);
         }
     }

@@ -32,11 +32,11 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            byte[] res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл создан!");
-            Console.WriteLine("Содержимое (Base64): " + res);
+            Console.WriteLine("Содержимое (Base64): " + Convert.ToBase64String(res));
 
-            double y = BitConverter.ToDouble(Convert.FromBase64String(res), 0);
+            double y = BitConverter.ToDouble(res, 0);
             Console.WriteLine("y = " + y);
 
             Console.ReadKey();
