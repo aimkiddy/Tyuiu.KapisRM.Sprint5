@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{C0306966
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.Kapis.RM.Sprint1.Task1.V17", "Tyuiu.Kapis.RM.Sprint1.Task1.V17\Tyuiu.Kapis.RM.Sprint1.Task1.V17.csproj", "{BE838927-E204-49FA-BEFA-C66392C61FD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.Kapis.RM.Sprint1.Task1.V17.Lib", "Tyuiu.Kapis.RM.Sprint1.Task1.V17.Lib\Tyuiu.Kapis.RM.Sprint1.Task1.V17.Lib.csproj", "{F198B429-8F86-4BC4-A2BF-2295404AF807}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.KapisRM.Sprint5.Task1.V17.Lib", "Tyuiu.Kapis.RM.Sprint1.Task1.V17.Lib\Tyuiu.KapisRM.Sprint5.Task1.V17.Lib.csproj", "{F198B429-8F86-4BC4-A2BF-2295404AF807}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.Kapis.RM.Sprint1.Task1.V17.Test", "Tyuiu.Kapis.RM.Sprint1.Task1.V17.Test\Tyuiu.Kapis.RM.Sprint1.Task1.V17.Test.csproj", "{CE407CF7-6C16-4B8A-9E9F-2AB641A0E590}"
 EndProject
