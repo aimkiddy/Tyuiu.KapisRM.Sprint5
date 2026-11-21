@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.KapisRM.Sprint5.Task3.V9.Lib
@@ -7,7 +8,7 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
+            string path = Path.GetTempFileName();
 
             double y = Math.Pow(x, 3) / (Math.Pow(x, 2) - 1);
             y = Math.Round(y, 3);

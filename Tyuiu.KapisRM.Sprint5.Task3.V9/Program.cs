@@ -33,17 +33,11 @@ namespace Tyuiu.KapisRM.Sprint5.Task3.V9
             Console.WriteLine("***************************************************************************");
 
             string res = ds.SaveToFileTextData(x);
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
-
-            Console.WriteLine("Файл: " + path);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Файл создан!");
             Console.WriteLine("Содержимое (Base64): " + res);
 
-            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
-            {
-                double y = reader.ReadDouble();
-                Console.WriteLine("y = " + y);
-            }
+            double y = BitConverter.ToDouble(Convert.FromBase64String(res), 0);
+            Console.WriteLine("y = " + y);
 
             Console.ReadKey();
         }
